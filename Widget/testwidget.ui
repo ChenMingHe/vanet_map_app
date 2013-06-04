@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TestWidget</class>
+ <widget class="QWidget" name="TestWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>221</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Test</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QPushButton" name="pushButton">
+        <property name="toolTip">
+         <string comment="发送一次本地位置信息"/>
+        </property>
+        <property name="text">
+         <string>LocalOnce</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="toolTip">
+         <string comment="发送一次远端位置信息"/>
+        </property>
+        <property name="text">
+         <string>DistanceOnce</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="toolTip">
+         <string comment="一次本地+远端无GPS信息"/>
+        </property>
+        <property name="text">
+         <string>NonLocation</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QPushButton" name="pushButton_4">
+        <property name="toolTip">
+         <string comment="发送一次远端位置新"/>
+        </property>
+        <property name="text">
+         <string>DistanceOnce2</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QPushButton" name="pushButton_5">
+        <property name="toolTip">
+         <string comment="文本信息"/>
+        </property>
+        <property name="text">
+         <string>TextMessage</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QPushButton" name="pushButton_6">
+        <property name="text">
+         <string>Picture</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="0">
+       <widget class="QPushButton" name="pushButton_7">
+        <property name="text">
+         <string>RttTest</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="0">
+       <widget class="QPushButton" name="pushButton_8">
+        <property name="text">
+         <string>BandTest</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QPushButton" name="pushButton_9">
+        <property name="text">
+         <string>LocalLocation</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QPushButton" name="pushButton_10">
+        <property name="text">
+         <string>DistanceLocation</string>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="0">
+       <widget class="QPushButton" name="pushButton_11">
+        <property name="text">
+         <string>HopTest</string>
+        </property>
+       </widget>
+      </item>
+      <item row="11" column="0">
+       <widget class="QPushButton" name="pushButton_12">
+        <property name="text">
+         <string>fileDialog</string>
+        </property>
+       </widget>
+      </item>
+      <item row="12" column="0">
+       <widget class="QPushButton" name="pushButton_13">
+        <property name="text">
+         <string>tcpsendertest</string>
+        </property>
+       </widget>
+      </item>
+      <item row="13" column="0">
+       <widget class="QPushButton" name="pushButton_14">
+        <property name="text">
+         <string>NoGPS</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

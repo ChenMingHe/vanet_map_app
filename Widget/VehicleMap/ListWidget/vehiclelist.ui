@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>VehicleList</class>
+ <widget class="QWidget" name="VehicleList">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>300</width>
+    <height>454</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>300</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="font">
+      <font>
+       <family>Agency FB</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>Vehicle Detail</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="ListWidget" name="obuList">
+        <property name="maximumSize">
+         <size>
+          <width>80</width>
+          <height>16777215</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="StackedWidget" name="obuInfoStack">
+        <property name="maximumSize">
+         <size>
+          <width>220</width>
+          <height>16777215</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ListWidget</class>
+   <extends>QListWidget</extends>
+   <header>Widget/VehicleMap/ListWidget/Widget/listwidget.h</header>
+  </customwidget>
+  <customwidget>
+   <class>StackedWidget</class>
+   <extends>QStackedWidget</extends>
+   <header>Widget/VehicleMap/ListWidget/Widget/stackedwidget.h</header>
+   <container>1</container>
+   <slots>
+    <slot>setCurrentWidget(QString)</slot>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>obuList</sender>
+   <signal>currentTextChanged(QString)</signal>
+   <receiver>obuInfoStack</receiver>
+   <slot>setCurrentWidget(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>65</x>
+     <y>97</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>167</x>
+     <y>103</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
